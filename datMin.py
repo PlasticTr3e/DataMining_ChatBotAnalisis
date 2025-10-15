@@ -357,7 +357,7 @@ with col1:
     pca_df_use['cluster'] = cluster_labels_use
     
     fig, ax = plt.subplots(figsize=(8, 6))
-    sns.scatterplot(x='PC1', y='PC2', hue='cluster', palette='Blues',
+    sns.scatterplot(x='PC1', y='PC2', hue='cluster', palette='deep',
                    data=pca_df_use, legend="full", s=80, alpha=0.7, ax=ax)
     
     centroids_use_pca = manual_pca(kmeans_use.centroids, n_components=2)
@@ -380,7 +380,7 @@ with col2:
     pca_df_perception['cluster'] = cluster_labels_perception
     
     fig, ax = plt.subplots(figsize=(8, 6))
-    sns.scatterplot(x='PC1', y='PC2', hue='cluster', palette='Reds',
+    sns.scatterplot(x='PC1', y='PC2', hue='cluster', palette='deep',
                    data=pca_df_perception, legend="full", s=80, alpha=0.7, ax=ax)
     
     centroids_perc_pca = manual_pca(kmeans_perception.centroids, n_components=2)
