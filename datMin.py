@@ -140,11 +140,6 @@ features = use_features + perception_features
 st.sidebar.markdown("---")
 max_k = st.sidebar.slider("Maksimal K untuk Metode Elbow", 5, 15, 10)
 
-
-# Analisis terpisah untuk Use dan Perception
-st.header("ANALISIS KLUSTER TERPISAH")
-st.markdown("Dua analisis kluster independen: satu untuk Use Features, satu untuk Perception Features")
-
 # ========== ANALISIS USE FEATURES ==========
 st.markdown("---")
 st.subheader("A. KLUSTER USE FEATURES (Pola Penggunaan)")
